@@ -11,7 +11,7 @@ public class Main {
         addTodoList("Bersepeda");
         addTodoList("Berkhotbah");
         showTodoList();
-        editToolsList(1, "Bekerja");
+        editTodoList(1, "Bekerja");
 
         System.out.println("AFTER EDIT");
         showTodoList();
@@ -99,7 +99,7 @@ public class Main {
         return false;
     }
 
-    public static boolean editToolsList(Integer number, String newTodo) {
+    public static boolean editTodoList(Integer number, String newTodo) {
         if (isSelectedTodoNotValid(number)) {
             return false;
         }
